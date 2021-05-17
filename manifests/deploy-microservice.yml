@@ -51,13 +51,13 @@ kind: Ingress
 metadata:
     annotations:
         nginx.ingress.kubernetes.io/rewrite-target: /$2
-    name: mild-temper-ingress
+    name: jose-solo-microservice-service 
     namespace: microservices
 spec:
     rules:
         -   http:
                 paths:
-                    -   path: /mild-temper(/|$)(.*)
+                    -   path: /jose-solo-microservice-service(/|$)(.*)
                         backend:
                             serviceName: jose-solo-microservice-service
                             servicePort: 30201
