@@ -57,9 +57,9 @@ spec:
     rules:
         -   http:
                 paths:
-                    -   path: /jose-solo-microservice-service(/|$)(.*)
+                    -   path: /jose-solo(/|$)(.*)
                         backend:
-                            serviceName: jose-solo-microservice-service
+                            serviceName: jose-solo
                             servicePort: 30201
 
 
